@@ -14,6 +14,7 @@ class RoundedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      constraints: BoxConstraints(minHeight: MediaQuery.of(context).size.height * 0.05),
       margin: const EdgeInsets.all(defaultPadding),
       width: double.infinity,
       decoration: BoxDecoration(

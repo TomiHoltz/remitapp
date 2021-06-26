@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:remitapp/SignInScreen/widgets/signin_screen_title.dart';
-import 'package:remitapp/SignInScreen/widgets/sign_in_text_fields.dart';
+import 'package:remitapp/SignUpScreen/widgets/sign_up_text_fields.dart';
+import 'package:remitapp/SignUpScreen/widgets/signup_screen_title.dart';
 import 'package:remitapp/constants.dart';
 import 'package:remitapp/widgets/rounded_button.dart';
 
-class SignInScreen extends StatelessWidget {
-  const SignInScreen({Key? key}) : super(key: key);
+class SignUpScreen extends StatelessWidget {
+  const SignUpScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,20 +18,18 @@ class SignInScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Spacer(),
-              SignInScreenTitle(),
+              SignUpScreenTitle(),
               Spacer(),
-              SignInTextFields(),
+              SignUpTextFields(),
               RoundedButton(
-                text: "Iniciar Sesion",
+                text: "Registarse",
                 onPressed: () {},
               ),
-              Container(
-                child: TextButton(
-                  onPressed: () {},
-                  child: Text(
-                    "Recuperar contraseña",
-                    style: TextStyle(color: darkBlackColor),
-                  ),
+              TextButton(
+                onPressed: () {},
+                child: Text(
+                  "Tienes Cuenta? Inicia sesion",
+                  style: TextStyle(color: darkBlackColor),
                 ),
               ),
               Spacer(),

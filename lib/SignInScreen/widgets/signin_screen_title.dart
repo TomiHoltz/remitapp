@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:remitapp/constants.dart';
 
-class ScreenTitle extends StatelessWidget {
-  const ScreenTitle({
+class SignInScreenTitle extends StatelessWidget {
+  const SignInScreenTitle({
     Key? key,
   }) : super(key: key);
 

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:remitapp/constants.dart';
 import 'package:remitapp/widgets/custom_text_fields.dart';
 
-class SignInTextFields extends StatelessWidget {
-  const SignInTextFields({
+class SignUpTextFields extends StatelessWidget {
+  const SignUpTextFields({
     Key? key,
   }) : super(key: key);
 
@@ -19,6 +19,10 @@ class SignInTextFields extends StatelessWidget {
           SizedBox(height: defaultPadding),
           CustomTextField(
             labelText: "Contraseña",
+          ),
+          SizedBox(height: defaultPadding),
+          CustomTextField(
+            labelText: "Confirmar contraseña",
           ),
         ],
       ),
